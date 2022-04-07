@@ -444,7 +444,7 @@
               </section>
               <nav id="maintoolbar">
               	<ul class="navtop">
-                  <li><button id="selectFile" value="1">Select File</button></li>
+                  <li><button id="selectFolder" value="1">Select Folder</button></li>
                   <li><button id="showLog" value="1">Show Log</button></li>
                   <li><button id="showConfig" value="1">Show Config</button></li>
                   <li><button id="OTAupload" value="1">OTA Upload</button></li>
@@ -1167,7 +1167,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
   const view = document.getElementById('stream')
   const viewContainer = document.getElementById('stream-container')
-  const fileButton = document.getElementById('selectFile')
+  const sfolderButton = document.getElementById('selectFolder')
   const configButton = document.getElementById('showConfig')
   const logButton = document.getElementById('showLog')
   const otaButton = document.getElementById('OTAupload')
@@ -1184,9 +1184,10 @@ document.addEventListener('DOMContentLoaded', function (event) {
   const saveButton = document.getElementById('save')
   //const formatButton = document.getElementById('format')
   
-  fileeButton.onclick = () => {
+  sfolderButton.onclick = () => {
     window.location.href='/web?FILE.htm';
   }
+
   configButton.onclick = () => {
     window.location.href='/web?configs.txt';
   }
